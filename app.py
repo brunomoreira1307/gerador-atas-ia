@@ -27,7 +27,7 @@ if not modelos_disponiveis:
 
 # Cria uma caixa de seleção na tela para você escolher o modelo
 st.markdown("### ⚙️ Configuração")
-modelo_escolhido = st.selectbox("Selecione o modelo "cérebro" para processar o áudio:", modelos_disponiveis)
+modelo_escolhido = st.selectbox("Selecione o modelo 'cérebro' para processar o áudio:", modelos_disponiveis)
 
 # Instancia o modelo escolhido pelo usuário
 modelo_gemini = genai.GenerativeModel(modelo_escolhido)
