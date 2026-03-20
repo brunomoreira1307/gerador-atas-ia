@@ -10,7 +10,7 @@ except KeyError:
     st.error("⚠️ Chave do Gemini não encontrada nos Secrets do Streamlit!")
     st.stop()
 
-modelo_gemini = genai.GenerativeModel('gemini-1.5-flash')
+modelo_gemini = genai.GenerativeModel('gemini-1.5-flash-latest')
 
 # --- Interface da Página ---
 st.set_page_config(page_title="Gerador de Atas", page_icon="🎙️", layout="wide")
